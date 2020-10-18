@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g id="Logo">
+	<g id="bg-shape">
+		<path fill="#00AEEF" d="M1000,900c0,55-45,100-100,100H100C45,1000,0,955,0,900V100C0,45,45,0,100,0h800c55,0,100,45,100,100V900z
+			"/>
+	</g>
+	<g id="Arrow">
+		<g id="Left">
+			<polygon fill="#FFFFFF" points="850,349.735 850,449.734 150,449.734 237.77,349.735 			"/>
+			<polygon fill="#FFFFFF" points="325.58,248.695 325.31,348.735 325.05,448.734 150,448.734 237.77,348.735 			"/>
+		</g>
+		<g id="Right">
+			<polygon fill="#FFFFFF" points="150,650.264 150,550.266 850,550.266 762.23,650.264 			"/>
+			<polygon fill="#FFFFFF" points="674.42,751.305 674.69,651.264 674.95,551.266 850,551.266 762.23,651.264 			"/>
+		</g>
+	</g>
+</g>
+</svg>

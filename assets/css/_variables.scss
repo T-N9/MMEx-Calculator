@@ -1,0 +1,19 @@
+$m-primary-color:#2cd1ee;
+$m-secondary-color:#707070;
+$m-light-color:#ffffff;
+$m-dark-color:#333333;
+@font-face {
+    font-family: myanSagar;
+    src: url(../fonts/MyanmarSagar.ttf);
+  }
+@mixin m-flex-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myanLan{
+    font-family: myanSagar;
+}
+.c-padding-1{
+    padding-top: 14px;
+}

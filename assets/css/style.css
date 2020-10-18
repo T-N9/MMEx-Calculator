@@ -1,0 +1,189 @@
+@font-face {
+  font-family: myanSagar;
+  src: url(../fonts/MyanmarSagar.ttf);
+}
+
+.myanLan {
+  font-family: myanSagar;
+}
+
+.c-padding-1 {
+  padding-top: 14px;
+}
+
+* {
+  font-family: 'Segoe UI', 'myanSagar';
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 711px;
+  margin-top: 185px;
+}
+
+.container .top-Section {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.container .top-Section .row .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .top-Section .row .brand .mlogo {
+  width: 71px;
+  height: 71px;
+}
+
+.container .top-Section .row .brand .mlogo-txt {
+  margin: 0 0 0 10px;
+  font-size: 43px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.container .top-Section .row .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .top-Section .row .output .output-result {
+  font-size: 71px;
+  color: #707070;
+  margin: 0;
+}
+
+.container .line {
+  width: 100%;
+  border: 2px solid #707070;
+}
+
+.container .data-ctrl {
+  width: 100%;
+}
+
+.container .data-ctrl .data-action {
+  width: 145px;
+}
+
+.container .data-ctrl .data-action label {
+  font-size: 28px;
+  color: #707070;
+}
+
+.container .data-ctrl .data-action input {
+  padding: 5px;
+  text-align: right;
+}
+
+.container .data-ctrl .data-action ::-webkit-input-placeholder {
+  color: rgba(112, 112, 112, 0.5);
+}
+
+.container .data-ctrl .data-action :-ms-input-placeholder {
+  color: rgba(112, 112, 112, 0.5);
+}
+
+.container .data-ctrl .data-action ::-ms-input-placeholder {
+  color: rgba(112, 112, 112, 0.5);
+}
+
+.container .data-ctrl .data-action ::placeholder {
+  color: rgba(112, 112, 112, 0.5);
+}
+
+.container .data-ctrl .data-action .input-section {
+  width: 100%;
+  height: 35px;
+  border-radius: 6px;
+  border: 2px solid #707070;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #707070;
+  font-size: 18px;
+}
+
+.container .data-ctrl .data-action .input-section:focus {
+  border: 2px solid #2cd1ee;
+  outline: 1px rgba(44, 209, 238, 0.3);
+}
+
+.container .data-ctrl .data-action select {
+  cursor: pointer;
+}
+
+.container .data-ctrl .data-action #calBtn {
+  width: 132px;
+  height: 70px;
+  color: #707070;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 1px solid #707070;
+  outline: none;
+}
+
+.container .data-ctrl .data-action #calBtn:active {
+  color: #2cd1ee;
+}
+
+.container .data-ctrl .data-action #calBtn:focus {
+  border: 2px solid #2cd1ee;
+  outline: 1px rgba(44, 209, 238, 0.3);
+}
+
+.container .data-history .history-table {
+  border-spacing: 2px;
+  border-collapse: separate;
+  border: 1px solid #707070;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.container .data-history .history-table thead tr {
+  font-size: 20px;
+  background-color: #2cd1ee;
+  color: #ffffff;
+}
+
+.container .data-history .history-table thead tr th {
+  border-radius: 5px;
+}
+
+.container .data-history .history-table thead tr th:last-child {
+  text-align: right;
+}
+
+.container .data-history .history-table .history-list tr td:last-child {
+  text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*# sourceMappingURL=style.css.map */

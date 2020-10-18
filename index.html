@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Loader Div -->
+<html lang="en">
+<head>
+  <!-- Meta Tag -->
+  <!-- Primary Meta Tags -->
+  <title>MMEx, Currency Exchange Rates</title>
+  <meta name="title" content="MMEx, Currency Exchange Rates">
+  <meta name="description" content="MMEx is an online web application to look up currency exchange rates around the world.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="MMEx, Currency Exchange Rates">
+  <meta property="og:description" content="MMEx is an online web application to look up currency exchange rates around the world.">
+  <meta property="og:image" content="assets/img/Logo1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:title" content="MMEx, Currency Exchange Rates">
+  <meta property="twitter:description" content="MMEx is an online web application to look up currency exchange rates around the world.">
+  <meta property="twitter:image" content="assets/img/Logo1.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="dist/all.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="dist/animate.min.css"/>
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="dist/slick.css">
+  <link rel="stylesheet" href="dist/slick-theme.css">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Shortcut Icon -->
+  <link rel="icon" href="Logo1.ico" type="image/x-icon">
+  <style>
+      /* For Loader */
+  </style>
+</head>
+<body>
+
+
+  <!-- Welcome TeNyain Moe Lwin -->
+  <section class="container">
+    <header class="top-Section">
+      <div class="row">
+        <div class="brand col-12 col-md-6">
+          <img class="mlogo" src="assets/img/Logo1.svg" alt="MMEx Logo">
+          <p class="mlogo-txt">MMEx</p>
+        </div>
+        <div class="output col-12 col-md-6">
+          <p class="output-result" id="output-result">0.00</p>
+        </div>
+      </div>
+    </header> 
+    <div class="line"></div>
+    <section class="data-ctrl mt-2">
+      <form class="row" id="dataForm">
+        <div class="col-12 col-md-3  data-action">
+          <label for="u-input">Input</label>
+          <input type="number" class="input-section input-sm" min="1" name="userInput" id="u-input" placeholder="0.00" autofocus required>
+        </div>
+        <div class="col-6 col-md-3 data-action">
+          <label for="u-from">From</label>
+          <select class="input-section" id="u-from" required>
+            <option value="" selected>Select Currency</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-3 data-action">
+          <label for="u-to">To</label>
+          <select class="input-section" id="u-to" required>
+            <option value="" selected>Select Currency</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-3 data-action c-padding-1">
+          <button id="calBtn" class="text-uppercase font-weight-bold">Calculate</button>
+        </div>
+      </form>
+    </section>
+    <section class="data-history mt-2">
+      <table class="table table-bordered history-table table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+            <th scope="col">Result</th>
+          </tr>
+        </thead>
+        <tbody class="history-list" id="historyList">
+          
+        </tbody>
+      </table>
+    </section>
+  </section>
+  
+  <!-- jQuery library -->
+  <script src="dist/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="dist/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="dist/bootstrap.min.js"></script>
+  <!-- Slick JS -->
+  <script src="dist/slick.min.js"></script>
+  <!-- Waypoints JS -->
+  <script src="dist/jquery.waypoints.min.js"></script>
+  <!-- WOW JS -->
+  <script src="dist/wow.min.js"></script>
+  <!-- Font Awesome JS -->
+  <script defer src="dist/all.min.js"></script>
+  <!-- Data JS -->
+  <script src="assets/js/data.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
