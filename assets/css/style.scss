@@ -7,12 +7,11 @@
     box-sizing: border-box;
 }
 body{
-    // @include m-flex-auto;
-    // height: 100vh;
 }
 .container{
     width: 711px;
-    margin-top: 185px;
+    margin-top: 170px;
+    padding-bottom: 200px;
     .top-Section{
         width: 100%;
         padding: 0 5px;
@@ -101,7 +100,7 @@ body{
         .history-table{
             border-spacing: 2px;
             border-collapse: separate;
-            border: 1px solid $m-secondary-color;
+            border:none;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             thead{
@@ -109,6 +108,7 @@ body{
                    font-size: 20px; 
                    background-color: $m-primary-color;
                    color: $m-light-color;
+                   border: none;
                     th{
                         border-radius: 5px;
 
@@ -123,6 +123,9 @@ body{
                     th{
 
                     }
+                    td{
+                        border: none;
+                    }
                     td:last-child{
                         text-align: right;
                     }
@@ -130,7 +133,48 @@ body{
             }
         }
     }
+    .record-ctrl{
+        @include m-flex-auto;
+        justify-content: flex-end;
+        #deleteBtn{
+            display: none;
+        }
+    }
 }
+#deleteBtn{
+    color: $m-secondary-color;
+    width: 130px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: 1px solid $m-secondary-color;
+    transition: 0.3s;
+    &:hover{
+        border: 2px solid;
+        border-color: $m-primary-color;
+    }
+    &:focus{
+        color: $m-primary-color;
+        border-color: $m-primary-color;
+    }
+}
+.switch{
+    @include m-flex-auto;
+    width: 50px;
+    height: 50px;
+    color: $m-secondary-color;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background-color: $m-secondary-color;
+        color: whitesmoke;
+    }
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -142,23 +186,24 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-// // Scroll Bar
-// ::-webkit-scrollbar {
-//     width: 10px;  
-// }
-// /* Track */
-// ::-webkit-scrollbar-track {
-//     background: #f1f1f110; 
-// }
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//     background:cyan;
-//     border-radius: 10px; 
+// Scroll Bar
+::-webkit-scrollbar {
+    width: 5px;  
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f110; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:#2cd1ee;
+    border-radius: 10px; 
     
-// }
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//     background:blue; 
-// }
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:cyan; 
+}
 
 @import 'responsive';
+@import 'night';

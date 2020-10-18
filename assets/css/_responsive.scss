@@ -8,9 +8,21 @@
  
 }
 @media screen and (max-width:576px){
+    .container{
+        width: 100%;
+        margin-top: 10px;
+    }
     .input-section{
-        // height: 70px !important;
-        // font-size: 35px !important;
+        height: 50px !important;
+    }
+    input{
+        font-size: 30px !important;
+    }
+    #calBtn{
+        width: 100% !important;
+    }
+    .history-list{
+        font-size: 18px !important;
     }
 }
 @media screen and (max-width:375px){

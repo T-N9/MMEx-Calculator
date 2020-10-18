@@ -10,17 +10,17 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:url" content="https://mmex.netlify.app">
   <meta property="og:title" content="MMEx, Currency Exchange Rates">
   <meta property="og:description" content="MMEx is an online web application to look up currency exchange rates around the world.">
-  <meta property="og:image" content="assets/img/Logo1.png">
+  <meta property="og:image" content="Logo1.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://metatags.io/">
+  <meta property="twitter:url" content="https://mmex.netlify.app">
   <meta property="twitter:title" content="MMEx, Currency Exchange Rates">
   <meta property="twitter:description" content="MMEx is an online web application to look up currency exchange rates around the world.">
-  <meta property="twitter:image" content="assets/img/Logo1.png">
+  <meta property="twitter:image" content="Logo1.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
@@ -96,8 +96,17 @@
         </tbody>
       </table>
     </section>
+    <section class="record-ctrl">
+      <div class="row">
+        <div class="col-12" id="btnInsert">
+          <button onclick="deleteRecord()" id="deleteBtn">Delete records</button>
+        </div>
+      </div>
+    </section>
   </section>
-  
+  <div id="switchBtn" class="switch day shadow">
+    <i id="sicon" class="fas fa-moon"></i>
+  </div>
   <!-- jQuery library -->
   <script src="dist/jquery.min.js"></script>
   <!-- Popper JS -->

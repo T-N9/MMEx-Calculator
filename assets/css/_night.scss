@@ -1,0 +1,39 @@
+.night-mode{
+    background-color: #19191a;
+    tbody tr{
+        background-color: $m-dark-secondary-color !important;
+        color: white;
+        &:hover{
+            background-color: #333 !important;
+            color: white !important;
+        }
+    }
+    .line{
+        border: 2px solid $m-dark-color;
+    }
+    .mlogo-txt{
+        color: $m-dark-color !important;
+    }
+    .output-result{
+        color: $m-dark-color !important;
+    }
+    label{
+        color: $m-dark-color !important;
+    }
+    input{
+        background-color: $m-dark-secondary-color !important;
+        color: $m-dark-color !important;
+
+    }
+    ::placeholder{
+        color: rgba($m-dark-color,0.5);
+    }
+    select{
+        background-color: $m-dark-secondary-color !important;
+        color: $m-dark-color !important;
+    }
+    #calBtn{
+        background-color: $m-dark-secondary-color;
+        color: $m-dark-secondary-color;
+    }
+}

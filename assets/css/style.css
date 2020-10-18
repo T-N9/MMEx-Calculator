@@ -21,7 +21,8 @@
 
 .container {
   width: 711px;
-  margin-top: 185px;
+  margin-top: 170px;
+  padding-bottom: 200px;
 }
 
 .container .top-Section {
@@ -152,7 +153,7 @@
 .container .data-history .history-table {
   border-spacing: 2px;
   border-collapse: separate;
-  border: 1px solid #707070;
+  border: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -161,6 +162,7 @@
   font-size: 20px;
   background-color: #2cd1ee;
   color: #ffffff;
+  border: none;
 }
 
 .container .data-history .history-table thead tr th {
@@ -171,8 +173,79 @@
   text-align: right;
 }
 
+.container .data-history .history-table .history-list tr td {
+  border: none;
+}
+
 .container .data-history .history-table .history-list tr td:last-child {
   text-align: right;
+}
+
+.container .record-ctrl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .record-ctrl #deleteBtn {
+  display: none;
+}
+
+#deleteBtn {
+  color: #707070;
+  width: 130px;
+  font-size: 17px;
+  border-radius: 8px;
+  border: 1px solid #707070;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#deleteBtn:hover {
+  border: 2px solid;
+  border-color: #2cd1ee;
+}
+
+#deleteBtn:focus {
+  color: #2cd1ee;
+  border-color: #2cd1ee;
+}
+
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #707070;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.switch:hover {
+  background-color: #707070;
+  color: whitesmoke;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -185,5 +258,105 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f110;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2cd1ee;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: cyan;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .input-section {
+    height: 50px !important;
+  }
+  input {
+    font-size: 30px !important;
+  }
+  #calBtn {
+    width: 100% !important;
+  }
+  .history-list {
+    font-size: 18px !important;
+  }
+}
+
+.night-mode {
+  background-color: #19191a;
+}
+
+.night-mode tbody tr {
+  background-color: #3a3b3c !important;
+  color: white;
+}
+
+.night-mode tbody tr:hover {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+.night-mode .line {
+  border: 2px solid #a9acb1;
+}
+
+.night-mode .mlogo-txt {
+  color: #a9acb1 !important;
+}
+
+.night-mode .output-result {
+  color: #a9acb1 !important;
+}
+
+.night-mode label {
+  color: #a9acb1 !important;
+}
+
+.night-mode input {
+  background-color: #3a3b3c !important;
+  color: #a9acb1 !important;
+}
+
+.night-mode ::-webkit-input-placeholder {
+  color: rgba(169, 172, 177, 0.5);
+}
+
+.night-mode :-ms-input-placeholder {
+  color: rgba(169, 172, 177, 0.5);
+}
+
+.night-mode ::-ms-input-placeholder {
+  color: rgba(169, 172, 177, 0.5);
+}
+
+.night-mode ::placeholder {
+  color: rgba(169, 172, 177, 0.5);
+}
+
+.night-mode select {
+  background-color: #3a3b3c !important;
+  color: #a9acb1 !important;
+}
+
+.night-mode #calBtn {
+  background-color: #3a3b3c;
+  color: #3a3b3c;
 }
 /*# sourceMappingURL=style.css.map */

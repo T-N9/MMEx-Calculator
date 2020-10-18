@@ -67,12 +67,40 @@ formAction.addEventListener("submit",function(cal){
     from.value="";
     to.value="";
     input.focus();
+    document.getElementById("deleteBtn").style.display="block";
 });
+
 (function(){
     if(localStorage.getItem("record")){
         historyL.innerHTML=localStorage.getItem("record");
+        document.getElementById("deleteBtn").style.display="block";
     }
     else{
         historyL.innerHTML=`<tr id="noRecord"><td  colspan="4" class="text-center">There is no record.</td></tr>`;
     }
 })();
+
+// localStorage.setItem("mode",false);
+function deleteRecord(){
+    localStorage.removeItem("record");
+    location.reload();
+};
+
+$('document').ready(function(){
+    $("#switchBtn").click(function(){
+        let hasC=$('#switchBtn').hasClass("day");
+        // localStorage.setItem("mode",hasC)
+        // let dl=localStorage.getItem("mode",hasC);
+        if(hasC){
+            $("body").addClass("night-mode");
+            $("#switchBtn").removeClass("day").addClass("night");
+            $("#sicon").removeClass("fa-moon").addClass("fa-sun");
+        }
+        else{
+            $("body").removeClass("night-mode");
+            $("#switchBtn").removeClass("night").addClass("day");
+            $("#sicon").removeClass("fa-sun").addClass("fa-moon");
+        }
+        // console.log(dl,hasC);
+    });
+});
